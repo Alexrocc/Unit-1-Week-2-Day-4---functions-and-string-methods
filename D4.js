@@ -105,11 +105,23 @@ check3and7(21)
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
 */
 
-function reverseString(stringa) {
+/* SCRIVI QUI LA TUA RISPOSTA */
 
+function reverseString(stringa) {
+    const strArray = stringa.split("")
+    const strArrayReverse = []
+    console.log (strArray)
+    
+    for (i = 0 ; i < strArray.length ; i++) {
+        strArrayReverse.unshift(strArray[i])
+    }
+    console.log(strArrayReverse)
+
+    const finalReverseString = strArrayReverse.join("")
+    console.log(finalReverseString)  
 }
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+reverseString("ciao")
 
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
@@ -117,6 +129,10 @@ function reverseString(stringa) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+function upperFirst(stringa) {
+
+}
 
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
