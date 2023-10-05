@@ -112,7 +112,7 @@ function reverseString(stringa) {
     const strArrayReverse = []
     console.log (strArray)
     
-    for (i = 0 ; i < strArray.length ; i++) {
+    for (let i = 0 ; i < strArray.length ; i++) {
         strArrayReverse.unshift(strArray[i])
     }
     console.log(strArrayReverse)
@@ -133,7 +133,7 @@ reverseString("ciao")
 function upperFirst(stringa) {
     const splitString = stringa.split(" ")
     const upperCasedArray = []
-    for (i = 0; i < splitString.length ; i++){
+    for (let i = 0; i < splitString.length ; i++){
        upperCasedArray.push(splitString[i][0].toUpperCase() + splitString[i].slice(1))
     }
     const upperCasedString = upperCasedArray.join(" ")
@@ -160,3 +160,13 @@ console.log(cutString("assolutamente si"))
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+function giveMeRandom(n) {
+    let randomArray = []
+
+    for (let i = 0 ; i < n ; i++) {
+        randomArray.push(Math.floor(Math.random()*11))  
+    }
+    return randomArray
+}
+console.log(giveMeRandom(8))
