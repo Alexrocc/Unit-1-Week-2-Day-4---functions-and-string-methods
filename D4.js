@@ -148,6 +148,13 @@ upperFirst("ciao amico")
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+function cutString(stringa) {
+    let  cutStringResult = stringa.slice(1, -1)
+    return cutStringResult
+}
+
+console.log(cutString("assolutamente si"))
+
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
