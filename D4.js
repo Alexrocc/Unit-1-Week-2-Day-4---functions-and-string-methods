@@ -131,9 +131,16 @@ reverseString("ciao")
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 function upperFirst(stringa) {
-
+    const splitString = stringa.split(" ")
+    const upperCasedArray = []
+    for (i = 0; i < splitString.length ; i++){
+       upperCasedArray.push(splitString[i][0].toUpperCase() + splitString[i].slice(1))
+    }
+    const upperCasedString = upperCasedArray.join(" ")
+    console.log(upperCasedString)
 }
 
+upperFirst("ciao amico")
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
  della stringa originale.
